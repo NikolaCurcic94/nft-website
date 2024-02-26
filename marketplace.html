@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>NFT Page</title>
+
+</head>
+
+<body>
+    <div class="container-header">
+        <header class="header">
+            <div class="header__row">
+                <a class="header-logo logo card-scaled" href="index.html">
+                    <img class="header-logo__image" src="./assets/icons/logo.svg" alt="Logo image" title="Logo">
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="marketplace.html" class="header__nav-link">Marketplace</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="rankings.html" class="header__nav-link">Rankings</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="./wallet.html" class="header__nav-link">Connect a wallet</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link header__button button--primary" href="create-acc.html">
+                                <img class="button-icon" src="./assets/icons/User.svg" alt="Search Icon"
+                                    title="Search Icon">
+                                <span class="button-text">Sign Up</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__menu-button">
+                    <img src="./assets/icons/Burger-Menu.svg" alt="Menu button" title="menu">
+                    <nav class="header__nav--smaller-dev">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a href="marketplace.html" class="header__nav-link">Marketplace</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="rankings.html" class="header__nav-link">Rankings</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="wallet.html" class="header__nav-link">Connect a wallet</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link button--white" href="create-acc.html">
+                                    <img class="button-icon" src="./assets/icons/User.svg" alt="Search Icon"
+                                        title="Search Icon">
+                                    <span class="button-text">Sign Up</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+    <main>
+        <div class="container">
+            <section class="marketplace__hero">
+                <h1 class="hero-heading">
+                    Browse Marketplace
+                </h1>
+                <p class="section-paragraph">Browse through more than 50k NFTs on the NFT Marketplace.</p>
+                <form class="marketplace-form" action="#">
+                    <label for="search"></label>
+                    <input type="text" id="search" class="search card" placeholder="Search your favourite NFTs">
+                </form>
+            </section>
+        </div>
+
+        <div class="container-fluid artist-profile__tabs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="tab-title first-tab">
+                            <span class="tab-title__text text-light">NFTs</span>
+                            <span class="tab-title__number text-light lighted card">382</span>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="tab-title">
+                            <span class="tab-title__text text-gray">Collections</span>
+                            <span class="tab-title__number text-light card">67</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid marketplace">
+            <div class="container">
+                <section class="section__card-profiles marketplace">
+                    <div class="section__card-profiles-grid row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <article class="section__discover-card card card-scaled">
+                                <picture>
+                                    <source media="(min-width:1280px)" srcset="assets/images/browse-marketplace-3.png"
+                                        title="Profile image">
+                                    <source media="(min-width:834px)" srcset="assets/images/browse-marketplace-2.png"
+                                        title="Profile image">
+                                    <source media="(min-width:375px)" srcset="assets/images/browse-marketplace-1.png"
+                                        title="Profile image">
+                                    <img class="card-image" src="assets/images/browse-marketplace-1.png"
+                                        alt="Profile image" title="Profile image">
+                                </picture>
+                                <div class="artist-profile card__content">
+                                    <h3 class="card-heading text-light">Magic Mushroom 0325</h3>
+                                    <div class="card__profile">
+                                        <img class="card__profile-icon" src="assets/icons/orbitian.png"
+                                            alt="Card icon image" title="Card icon image">
+                                        <span class="card__profile-nick text-light">Orbitian</span>
+                                    </div>
+                                    <div class="section__discover-card__price-wrapper font-secondary">
+                                        <span class="price">Price</span>
+                                        <span class="highest-bid">Highest Bid</span>
+                                    </div>
+                                    <div class="section__discover-card__value-wrapper">
+                                        <span class="number">1.63 ETH</span>
+                                        <span class="highest-bid">0.33 wETH</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <article class="section__discover-card card card-scaled">
+                                <picture>
+                                    <source media="(min-width:1280px)" srcset="assets/images/browse-marketplace-14.png"
+                                        title="Profile image">
+                                    <source media="(min-width:834px)" srcset="assets/images/browse-marketplace-13.png"
+                                        title="Profile image">
+                                    <source media="(min-width:375px)" srcset="assets/images/browse-marketplace-4.png"
+                                        title="Profile image">
+                                    <img class="card-image" src="assets/images/browse-marketplace-4.png"
+                                        alt="Profile image" title="Profile image">
+                                </picture>
+                                <div class="artist-profile card__content">
+                                    <h3 class="card-heading text-light">Happy Robot 032</h3>
+                                    <div class="card__profile">
+                                        <img class="card__profile-icon" src="assets/icons/orbitian.png"
+                                            alt="Card icon image" title="Card icon image">
+                                        <span class="card__profile-nick text-light">Orbitian</span>
+                                    </div>
+                                    <div class="section__discover-card__price-wrapper font-secondary">
+                                        <span class="price">Price</span>
+                                        <span class="highest-bid">Highest Bid</span>
+                                    </div>
+                                    <div class="section__discover-card__value-wrapper">
+                                        <span class="number">1.63 ETH</span>
+                                        <span class="highest-bid">0.33 wETH</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <article class="section__discover-card card card-scaled">
+                                <picture>
+                                    <source media="(min-width:1280px)" srcset="assets/images/browse-marketplace-6.png"
+                                        title="Profile image">
+                                    <source media="(min-width:834px)" srcset="assets/images/browse-marketplace-5.png"
+                                        title="Profile image">
+                                    <source media="(min-width:375px)" srcset="assets/images/browse-marketplace-12.png"
+                                        title="Profile image">
+                                    <img class="card-image" src="assets/images/browse-marketplace-12.png"
+                                        alt="Profile image" title="Profile image">
+                                </picture>
+
+                                <div class="artist-profile card__content">
+                                    <h3 class="card-heading text-light">Happy Robot 024</h3>
+                                    <div class="card__profile">
+                                        <img class="card__profile-icon" src="assets/icons/orbitian.png"
+                                            alt="Card icon image" title="Card icon image">
+                                        <span class="card__profile-nick text-light">Orbitian</span>
+                                    </div>
+                                    <div class="section__discover-card__price-wrapper font-secondary">
+                                        <span class="price">Price</span>
+                                        <span class="highest-bid">Highest Bid</span>
+                                    </div>
+                                    <div class="section__discover-card__value-wrapper">
+                                        <span class="number">1.63 ETH</span>
+                                        <span class="highest-bid">0.33 wETH</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <article class="section__discover-card card card-scaled">
+                                <picture>
+                                    <source media="(min-width:1280px)" srcset="assets/images/bear-large-1.png"
+                                        title="Profile image">
+                                    <source media="(min-width:834px)" srcset="assets/images/bear-large.png"
+                                        title="Profile image">
+                                    <source media="(min-width:375px)" srcset="assets/images/nft-card-mobile-1.png"
+                                        title="Profile image">
+                                    <img class="card-image" src="assets/images/nft-card-mobile-1.png"
+                                        alt="Profile image" title="Profile image">
+                                </picture>
+
+                                <div class="artist-profile card__content">
+                                    <h3 class="card-heading text-light">Designer Bear</h3>
+                                    <div class="card__profile">
+                                        <img class="card__profile-icon" src="assets/icons/orbitian.png"
+                                            alt="Card icon image" title="Card icon image">
+                                        <span class="card__profile-nick text-light">Orbitian</span>
+                                    </div>
+                                    <div class="section__discover-card__price-wrapper font-secondary">
+                                        <span class="price">Price</span>
+                                        <span class="highest-bid">Highest Bid</span>
+                                    </div>
+                                    <div class="section__discover-card__value-wrapper">
+                                        <span class="number">1.63 ETH</span>
+                                        <span class="highest-bid">0.33 wETH</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <article class="section__discover-card card card-scaled">
+                                <picture>
+                                    <source media="(min-width:1280px)" srcset="assets/images/browse-dog-3.png"
+                                        title="Profile image">
+                                    <source media="(min-width:834px)" srcset="assets/images/browse-dog-2.png"
+                                        title="Profile image">
+                                    <source media="(min-width:375px)" srcset="assets/images/browse-dog-1.png"
+                                        title="Profile image">
+                                    <img class="card-image" src="assets/images/browse-dog-1.png" alt="Profile image"
+                                        title="Profile image">
+                                </picture>
+                                <div class="artist-profile card__content">
+                                    <h3 class="card-heading text-light">Colorful Dog 0356</h3>
+                                    <div class="card__profile">
+                                        <img class="card__profile-icon" src="assets/icons/orbitian.png"
+                                            alt="Card icon image" title="Card icon image">
+                                        <span class="card__profile-nick text-light">Orbitian</span>
+                                    </div>
+                                    <div class="section__discover-card__price-wrapper font-secondary">
+                                        <span class="price">Price</span>
+                                        <span class="highest-bid">Highest Bid</span>
+                                    </div>
+                                    <div class="section__discover-card__value-wrapper">
+                                        <span class="number">1.63 ETH</span>
+                                        <span class="highest-bid">0.33 wETH</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 med-res-profile">
+                            <article class="section__discover-card card card-scaled">
+                                <picture>
+                                    <source media="(min-width:1280px)" srcset="assets/images/nft-card-tablet-6.png"
+                                        title="Profile image">
+                                    <source media="(min-width:834px)" srcset="assets/images/dancing-robot-tablet.png"
+                                        title="Profile image">
+                                    <img class="card-image" src="assets/images/dancing-robot-tablet.png"
+                                        alt="Profile image" title="Profile image">
+                                </picture>
+                                <div class="artist-profile card__content">
+                                    <h3 class="card-heading text-light">Dancing Robot 0312</h3>
+                                    <div class="card__profile">
+                                        <img class="card__profile-icon" src="assets/icons/orbitian.png"
+                                            alt="Card icon image" title="Card icon image">
+                                        <span class="card__profile-nick text-light">Orbitian</span>
+                                    </div>
+                                    <div class="section__discover-card__price-wrapper font-secondary">
+                                        <span class="price">Price</span>
+                                        <span class="highest-bid">Highest Bid</span>
+                                    </div>
+                                    <div class="section__discover-card__value-wrapper">
+                                        <span class="number">1.63 ETH</span>
+                                        <span class="highest-bid">0.33 wETH</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 large-res-profile">
+                            <article class="section__discover-card card card-scaled">
+                                <picture>
+                                    <source media="(min-width:1280px)" srcset="assets/images/browse-marketplace-7.png"
+                                        title="Profile image">
+                                    <source media="(min-width:834px)" srcset="assets/images/chery-tablet.png"
+                                        title="Profile image">
+
+                                    <img class="card-image" src="assets/images/chery-tablet.png" alt="Profile image"
+                                        title="Profile image">
+                                </picture>
+                                <div class="artist-profile card__content">
+                                    <h3 class="card-heading text-light">Cherry Blossom Girl 035</h3>
+                                    <div class="card__profile">
+                                        <img class="card__profile-icon" src="assets/icons/orbitian.png"
+                                            alt="Card icon image" title="Card icon image">
+                                        <span class="card__profile-nick text-light">Orbitian</span>
+                                    </div>
+                                    <div class="section__discover-card__price-wrapper font-secondary">
+                                        <span class="price">Price</span>
+                                        <span class="highest-bid">Highest Bid</span>
+                                    </div>
+                                    <div class="section__discover-card__value-wrapper">
+                                        <span class="number">1.63 ETH</span>
+                                        <span class="highest-bid">0.33 wETH</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 large-res-profile">
+                            <article class="section__discover-card card card-scaled">
+                                <picture>
+                                    <source media="(min-width:1280px)" srcset="assets/images/browse-marketplace-9.png"
+                                        title="Profile image">
+                                    <source media="(min-width:834px)" srcset="assets/images/browse-marketplace-8.png"
+                                        title="Profile image">
+
+                                    <img class="card-image" src="assets/images/browse-marketplace-8.png"
+                                        alt="Profile image" title="Profile image">
+                                </picture>
+                                <div class="artist-profile card__content">
+                                    <h3 class="card-heading text-light">Space Travel</h3>
+                                    <div class="card__profile">
+                                        <img class="card__profile-icon" src="assets/icons/orbitian.png"
+                                            alt="Card icon image" title="Card icon image">
+                                        <span class="card__profile-nick text-light">Orbitian</span>
+                                    </div>
+                                    <div class="section__discover-card__price-wrapper font-secondary">
+                                        <span class="price">Price</span>
+                                        <span class="highest-bid">Highest Bid</span>
+                                    </div>
+                                    <div class="section__discover-card__value-wrapper">
+                                        <span class="number">1.63 ETH</span>
+                                        <span class="highest-bid">0.33 wETH</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 large-res-profile">
+                            <article class="section__discover-card card card-scaled">
+                                <img class="card-image" src="assets/images/browse-marketplace-10.png"
+                                    alt="Profile image" title="Profile image">
+                                <div class="artist-profile card__content">
+                                    <h3 class="card-heading text-light">Sunset Dimension</h3>
+                                    <div class="card__profile">
+                                        <img class="card__profile-icon" src="assets/icons/orbitian.png"
+                                            alt="Card icon image" title="Card icon image">
+                                        <span class="card__profile-nick text-light">Orbitian</span>
+                                    </div>
+                                    <div class="section__discover-card__price-wrapper font-secondary">
+                                        <span class="price">Price</span>
+                                        <span class="highest-bid">Highest Bid</span>
+                                    </div>
+                                    <div class="section__discover-card__value-wrapper">
+                                        <span class="number">1.63 ETH</span>
+                                        <span class="highest-bid">0.33 wETH</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 large-res-profile">
+                            <article class="section__discover-card card card-scaled">
+                                <img class="card-image" src="assets/images/browse-marketplace-11.png"
+                                    alt="Profile image" title="Profile image">
+                                <div class="artist-profile card__content">
+                                    <h3 class="card-heading text-light">Desert Walk</h3>
+                                    <div class="card__profile">
+                                        <img class="card__profile-icon" src="assets/icons/orbitian.png"
+                                            alt="Card icon image" title="Card icon image">
+                                        <span class="card__profile-nick text-light">Orbitian</span>
+                                    </div>
+                                    <div class="section__discover-card__price-wrapper font-secondary">
+                                        <span class="price">Price</span>
+                                        <span class="highest-bid">Highest Bid</span>
+                                    </div>
+                                    <div class="section__discover-card__value-wrapper">
+                                        <span class="number">1.63 ETH</span>
+                                        <span class="highest-bid">0.33 wETH</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 large-res-profile">
+                            <article class="section__discover-card card card-scaled">
+                                <img class="card-image" src="assets/images/browse-ape.png" alt="Profile image"
+                                    title="Profile image">
+                                <div class="artist-profile card__content">
+                                    <h3 class="card-heading text-light">IceCream Ape 0324</h3>
+                                    <div class="card__profile">
+                                        <img class="card__profile-icon" src="assets/icons/orbitian.png"
+                                            alt="Card icon image" title="Card icon image">
+                                        <span class="card__profile-nick text-light">Orbitian</span>
+                                    </div>
+                                    <div class="section__discover-card__price-wrapper font-secondary">
+                                        <span class="price">Price</span>
+                                        <span class="highest-bid">Highest Bid</span>
+                                    </div>
+                                    <div class="section__discover-card__value-wrapper">
+                                        <span class="number">1.63 ETH</span>
+                                        <span class="highest-bid">0.33 wETH</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 large-res-profile">
+                            <article class="section__discover-card card card-scaled">
+                                <img class="card-image" src="assets/images/browse-dog.png" alt="Profile image"
+                                    title="Profile image">
+                                <div class="artist-profile card__content">
+                                    <h3 class="card-heading text-light">Colorful Dog 0344</h3>
+                                    <div class="card__profile">
+                                        <img class="card__profile-icon" src="assets/icons/orbitian.png"
+                                            alt="Card icon image" title="Card icon image">
+                                        <span class="card__profile-nick text-light">Orbitian</span>
+                                    </div>
+                                    <div class="section__discover-card__price-wrapper font-secondary">
+                                        <span class="price">Price</span>
+                                        <span class="highest-bid">Highest Bid</span>
+                                    </div>
+                                    <div class="section__discover-card__value-wrapper">
+                                        <span class="number">1.63 ETH</span>
+                                        <span class="highest-bid">0.33 wETH</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </main>
+    <div class="container-fluid container-footer">
+        <div class="container">
+            <footer class="footer">
+                <div class="footer__row">
+                    <div class="footer__column">
+                        <a class="footer__logo logo card-scaled" href="index.html">
+                            <img class="footer__logo-image" src="./assets/icons/logo.svg" alt="Logo image" title="Logo">
+                        </a>
+                        <a class="footer__paragraph" href="#">NFT marketplace UI created with Anima for Figma.</a>
+                        <a class="footer__paragraph" href="#">Join our community</a>
+                        <div class="footer__social-wrapper">
+                            <img class="footer__social-icons card-scaled" src="assets/icons/DiscordLogo.svg"
+                                alt="Social icon" title="Social icon">
+                            <img class="footer__social-icons card-scaled" src="assets/icons/YoutubeLogo.svg"
+                                alt="Social icon" title="Social icon">
+                            <img class="footer__social-icons card-scaled" src="assets/icons/TwitterLogo.svg"
+                                alt="Social icon" title="Social icon">
+                            <img class="footer__social-icons card-scaled" src="assets/icons/InstagramLogo.svg"
+                                alt="Social icon" title="Social icon">
+                        </div>
+                    </div>
+                    <div class="footer__column">
+                        <h5 class="footer__heading">Explore</h5>
+                        <a class="footer__paragraph" href="#">Marketplace</a>
+                        <a class="footer__paragraph" href="#">Rankings</a>
+                        <a class="footer__paragraph" href="#">Connect a wallet</a>
+                    </div>
+                    <div class="footer__column">
+                        <h5 class="footer__heading">Join our weekly digest</h5>
+                        <a class="footer__paragraph" href="#">Get exclusive promotions & updates straight to your
+                            inbox.</a>
+                        <form class="footer__form form" action="#">
+                            <label class="label-email" for="footer-email"></label>
+                            <input class="input-email card" type="email" name="email" id="footer-email"
+                                placeholder="Enter your email here" required>
+                            <button class="form__button button--primary" type="submit">
+                                <img class="form__button-image" src="assets/icons/EnvelopeSimple.svg" alt="button image"
+                                    title="button image">Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <p class="footer__paragraph">Ⓒ NFT Market. Use this template freely.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

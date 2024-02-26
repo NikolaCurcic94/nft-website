@@ -1,0 +1,84 @@
+// utilities and helpers
+
+
+// centering ***************
+
+%centered-by-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// border radius ***************
+
+.card {
+    border-radius: 20px;
+}
+
+// hover and focus effects *****************
+
+.card-scaled {
+    border-radius: 20px;
+    transition: all 200ms ease-in-out;
+}
+
+.card-scaled:hover,
+.card-scaled:focus {
+    transform: scale(1.04);
+}
+
+[class*="icon"] {
+    cursor: pointer;
+}
+
+[class*="icon"]:hover {
+    -webkit-filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(358deg) brightness(104%) contrast(101%);
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(358deg) brightness(104%) contrast(101%);
+}
+
+.input:focus,
+.input:active {
+    border: 3px solid $color-purple;
+    color: $color-purple;
+}
+
+// card properties *****************
+
+.card-image {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+}
+
+.card__content {
+    border-radius: 0px 0px 20px 20px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 22px 20px 24px;
+}
+
+.card__profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.card__profile-wrapper {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 12px;
+}
+
+.card__profile-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.card__profile-nick {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}

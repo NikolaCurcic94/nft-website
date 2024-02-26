@@ -1,0 +1,24 @@
+// fonts 
+
+$font-primary: 'Work Sans';
+$font-secondary: 'Space Mono';
+$font-secondary-bold: 'Space Mono Bold';
+
+// colors 
+
+$color-background: #2B2B2B;
+$color-gray: #858584;
+$color-gray-dark: #3B3B3B;
+$color-dark: black;
+$color-purple: #A259FF;
+$color-purple-transparent: rgba(161, 89, 255, 0.5803921569);
+$color-white: #ffffff;
+$color-green: #00AC4F;
+
+$gradient: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #A259FF 100%);
+
+// responisve
+
+$screen-small: 375px;
+$screen-medium: 834px;
+$screen-large: 1280px;

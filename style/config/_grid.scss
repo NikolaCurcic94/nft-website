@@ -1,0 +1,111 @@
+// grid
+
+@mixin container($container-type) {
+    @if $container-type ==standard {
+        margin: 0 auto;
+        padding: 0 30px;
+        max-width: 1120px;
+        /* povecana max sirina kontejnera zbog neuklapanja sa figmom u hero sectionu
+        - nije bio dovoljno prosotra za elemente */
+    }
+
+    @else if $container-type ==fluid {
+        width: 100%;
+    }
+
+    @else if $container-type ==head {
+        margin: 0 auto;
+        padding: 0 30px;
+        max-width: 1180px;
+    }
+
+    @else if $container-type ==larg {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}
+
+.container {
+    @include container(standard);
+}
+
+.container-fluid {
+    @include container(fluid);
+}
+
+.container-header {
+    @include container(head);
+}
+
+.container-large {
+    @include container(larg);
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+[class^="col"] {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+@media (min-width: $screen-small) {
+
+    .col-12 {
+        flex-basis: 100%;
+    }
+
+    .col-6 {
+        flex-basis: 50%;
+    }
+
+    .col-4 {
+        flex-basis: 33%;
+    }
+
+    .col-3 {
+        flex-basis: 25%;
+    }
+}
+
+@media (min-width: $screen-medium) {
+    .col-md-12 {
+        flex-basis: 100%;
+    }
+
+    .col-md-6 {
+        flex-basis: 50%;
+    }
+
+    .col-md-4 {
+        flex-basis: calc(100% / 3);
+    }
+
+    .col-md-3 {
+        flex-basis: 25%;
+    }
+}
+
+@media (min-width: $screen-large) {
+    .col-lg-12 {
+        flex-basis: 100%;
+    }
+
+    .col-lg-6 {
+        flex-basis: 50%;
+    }
+
+    .col-lg-4 {
+        flex-basis: calc(100% / 3);
+    }
+
+    .col-lg-3 {
+        flex-basis: 25%;
+    }
+}

@@ -1,0 +1,48 @@
+/******************* section browse *********************/
+
+.section__browse {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 0;
+
+    & .row {
+        row-gap: 20px;
+    }
+
+    .category__card {
+        position: relative;
+        overflow: hidden;
+
+        &-background {
+            background-image: url('../assets/images/card-background-1.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            -webkit-filter: blur(7.5px);
+                    filter: blur(7.5px);
+            width: 100%;  
+        }
+
+        &-image {
+            width: 54%;
+            position: absolute;
+            top: calc((100% - 67px) / 2);
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &-title {
+            background-color: $color-gray-dark;
+            color: $color-white;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 140%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px 20px 25px;
+            height: 67px;
+        }
+    }
+}
+

@@ -1,0 +1,168 @@
+// animakid
+
+.banner {
+    height: 250px;
+    background-image: url('../../assets/images/animakid-background-mobile.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+
+    @media (min-width: $screen-medium) {
+        height: 280px;
+        background-image: url('../../assets/images/animakid-background-tablet.png');
+
+    }
+
+    @media (min-width: $screen-large) {
+        height: 320px;
+        background-image: url('../../assets/images/animakid-background-tablet.png');
+        background-position-y: -45px;
+    }
+
+    .container {
+        position: relative;
+        height: 100%;
+    }
+
+    .profile-picture {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -60px;
+
+        @media (min-width: $screen-medium) {
+            left: 30px;
+            transform: none;
+        }
+    }
+}
+
+.section__artist-profile {
+    background-color: $color-background;
+    padding-top: 80px;
+
+    @media (min-width: $screen-large) {
+        padding-top: 90px;
+    }
+
+    .hero-heading {
+        margin-bottom: 30px;
+
+        @media (min-width: $screen-large) {
+            font-size: 51px;
+        }
+    }
+
+    &-button__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 30px;
+
+        .button--transparent {
+            margin: 0;
+        }
+
+        @media (min-width: $screen-medium) {
+            flex-direction: row;
+        }
+    }
+
+    .hero__stats {
+        margin-bottom: 30px;
+        justify-content: flex-start;
+        gap: 80px;
+    }
+
+    .hero__title {
+        display: block;
+        margin-bottom: 10px;
+        color: $color-gray;
+    }
+
+    .hero__social-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        margin-bottom: 30px;
+    }
+}
+
+.artist-profile__tabs {
+    border-top: 1px solid $color-gray;
+
+    .tab-title {
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+
+        &__number {
+            display: none;
+
+            @media (min-width: $screen-medium) {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 5px 10px;
+                background-color: $color-gray-dark;
+                font-family: $font-secondary;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 110%;
+            }
+        }
+
+        &.first-tab {
+            border-bottom: 2px solid $color-gray;
+
+            .lighted {
+                background-color: $color-gray;
+            }
+        }
+    }
+}
+
+.container__card-profiles {
+    background-color: $color-gray-dark;
+    border: 2px solid $color-background;
+}
+
+.section__card-profiles {
+    padding: 80px 0;
+
+
+    .row {
+        row-gap: 30px;
+    }
+
+    .artist-profile.card__content {
+        background-color: $color-background;
+
+        .card__profile {
+            margin-bottom: 27px;
+        }
+    }
+
+    .med-res-profile {
+        display: none;
+
+        @media (min-width: $screen-medium) {
+            display: block;
+        }
+    }
+
+    .large-res-profile {
+        display: none;
+
+        @media (min-width: $screen-large) {
+            display: block;
+        }
+
+    }
+}

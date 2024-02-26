@@ -1,0 +1,131 @@
+/************** external fonts ************ */
+
+@font-face {
+    font-family: $font-primary;
+    src: url(../assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: $font-secondary;
+    src: url(../assets/fonts/SpaceMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: $font-secondary-bold;
+    src: url(../assets/fonts/SpaceMono-Bold.ttf);
+}
+
+/************** global typo ************ */
+
+* {
+    font-family: $font-primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $color-white;
+}
+
+.font-secondary {
+    font-family: $font-secondary-bold;
+}
+
+.text-light {
+    color: $color-white;
+}
+
+.text-gray {
+    color: $color-gray;
+}
+
+/************** typo mixins and blueprints ************ */
+
+%heading {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 140%;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: $color-white;
+}
+
+%paragraph {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: $color-white;
+}
+
+@mixin typo($type) {
+    @if $type ==sp {
+        @extend %paragraph;
+        margin-bottom: 40px;
+
+        @media (min-width: $screen-large) {
+            font-size: 22px;
+            margin-bottom: 60px;
+            line-height: 160%;
+        }
+    }
+
+    @else if $type ==sh {
+        @extend %heading;
+
+        @media (min-width: $screen-large) {
+            font-size: 38px;
+            line-height: 120%;
+        }
+    }
+
+    @else if $type ==hh {
+        @extend %heading;
+
+        @media (min-width: $screen-medium) {
+            font-size: 38px;
+            line-height: 120%;
+        }
+
+        @media (min-width: $screen-large) {
+            font-size: 51px;
+            line-height: 120%;
+        }
+    }
+
+    @else if $type ==ch {
+        @extend %heading;
+        font-size: 22px;
+    }
+
+    @else if $type ==cp {
+        @extend %paragraph;
+    }
+
+}
+
+/******************* section typo ************** */
+
+.section-heading {
+    @include typo(sh);
+}
+
+.hero-heading {
+    @include typo(hh)
+}
+
+.section-paragraph {
+    @include typo(sp);
+}
+
+/******************* card typo ****************** */
+
+.card-heading {
+    @include typo(ch);
+}
+
+.card-paragrpah {
+    @include typo(cp);
+}

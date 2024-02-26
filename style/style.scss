@@ -1,0 +1,29 @@
+@import './config/reset';
+@import './config/variables';
+@import './config/typo';
+@import './config/grid';
+@import './config/utilities';
+@import './components/buttons';
+@import './components/header';
+@import './sections/hero';
+@import './sections/swiper';
+@import './sections/top-creators';
+@import './sections/browse';
+@import './sections/discover.scss';
+@import './sections/browse';
+@import './sections/mashroom.scss';
+@import './sections/how.scss';
+@import './components/form';
+@import './components/footer';
+@import './pages/wallet/wallet';
+@import './pages/create-acc/create-acc';
+@import './pages/artist-profile/artist-profile';
+@import './pages/nft-page/nft-page';
+@import './pages/marketplace/marketplace';
+@import './pages/rankings/rankings';
+
+
+body {
+    background-color: $color-background;
+    overflow-x: hidden;
+}

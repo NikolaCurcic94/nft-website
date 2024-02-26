@@ -1,0 +1,94 @@
+// section conect wallet 
+
+.section-connect-wallet {
+    display: flex;
+    flex-direction: column;
+
+    .hero-heading {
+        max-width: 510px;
+    }
+
+    @media (min-width: $screen-medium) {
+        flex-direction: row;
+    }
+
+    &__picture {
+        background-image: url('../../assets/images/wallet-mobile.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 232px;
+
+        @media (min-width: $screen-medium) {
+            background-image: url('../../assets/images/wallet-tablet.png');
+            flex-basis: calc(50% + 60px);
+            height: 617px;
+        }
+
+        @media (min-width: $screen-large) {
+            background-image: url('../../assets/images/wallet-desktop.png');
+            height: 691px;
+        }
+    }
+
+    &__content {
+        padding: 30px 30px 40px;
+
+        @media (min-width: $screen-medium) {
+            flex-basis: 50%;
+            padding-top: 80px;
+            padding-left: 40px;
+        }
+
+        @media (min-width: $screen-medium) {
+            padding-top: 100px;
+            padding-left: 60px;
+        }
+    }
+
+    &__image {
+        width: 100%;
+    }
+
+    &__buttons-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .wallet-provider {
+        border: 1px solid $color-purple;
+        background-color: $color-gray-dark;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 20px 0px 40px;
+        gap: 20px;
+        width: 320px;
+        height: 60px;
+
+        @media (min-width: $screen-large) {
+            width: 320px;
+        }
+
+        &__title {
+            color: $color-white;
+        }
+    }
+
+    .wallet-provider:hover {
+        border-width: 5px;
+
+        img {
+            -webkit-filter: none;
+            filter: none;
+        }
+
+        :last-child {
+            color: $color-purple;
+        }
+    }
+
+}

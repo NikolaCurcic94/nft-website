@@ -1,0 +1,121 @@
+/******************* how it works section ***************/
+
+.how__section {
+    padding: 40px 0;
+
+    @media (min-width: $screen-large) {
+        padding: 80px 0;
+    }
+
+    .section-paragrpah {
+        margin-bottom: 40px;
+    }
+
+    .card-image {
+        width: 100%;
+
+        @media (min-width: $screen-medium) {
+            min-width: 300px;
+        }
+
+        @media (min-width: $screen-large) {
+            min-width: 425px;
+        }
+    }
+
+    & .row {
+        row-gap: 30px;
+        margin-bottom: 80px;
+    }
+
+    &-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: $color-gray-dark;
+
+        @media (min-width: $screen-medium) {
+            flex-direction: column;
+            text-align: center;
+            min-height: 340px;
+            justify-content: flex-start;
+        }
+
+        &__image {
+            background-image: url('../assets/images/how-card-1.svg');
+            background-repeat: no-repeat;
+            background-size: 120%;
+            background-position: -20px center;
+            width: 190px;
+            height: 160px;
+
+            @media (min-width: $screen-medium) {
+                background-position: -20px -30px;
+            }
+        }
+
+        &__content {
+            width: 90%;
+        }
+
+        &__title {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 140%;
+            margin-bottom: 10px;
+
+            @media (min-width: $screen-large) {
+                font-size: 22px;
+            }
+        }
+
+        &__paragraph {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 140%;
+            color: $color-white;
+
+            @media (min-width: $screen-large) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    &-form-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+
+        @media (min-width: $screen-medium) {
+            flex-direction: row;
+            background-color: $color-gray-dark;
+            padding: 40px 30px
+        }
+
+        @media (min-width: $screen-large) {
+            gap: 80px;
+            padding: 60px;
+        }
+    }
+
+    &-form-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @media (min-width: $screen-large) {
+            padding-top: 19px;
+        }
+    }
+
+    &-form {
+        .input-email {
+            @media (min-width: $screen-large) {
+                width: 300px;
+                height: 60px;
+            }
+        }
+    }
+}

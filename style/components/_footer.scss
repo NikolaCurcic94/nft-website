@@ -1,0 +1,56 @@
+/******************* footer ***************/
+
+.container-footer {
+    background-color: $color-gray-dark;
+}
+
+.footer {
+    padding: 48px 0 48px;
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid $color-gray;
+        margin-bottom: 20px;
+        padding-bottom: 30px;
+        gap: 35px;
+
+        @media (min-width: 1280px) {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 0;
+            margin-bottom: 20px;
+            padding-bottom: 30px;
+        }
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__logo {
+        width: 237px;
+    }
+
+    &__heading {
+        font-family: $font-secondary;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 160%;
+    }
+
+    &__paragraph {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        font-family: $font-primary;
+        color: $color-gray;
+    }
+
+    &__social-wrapper {
+        display: flex;
+        gap: 13px;
+    }
+}

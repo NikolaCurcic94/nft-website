@@ -1,0 +1,247 @@
+.section__nft-page__background {
+    background-image: url('../../../assets/images/nft-page-hero-mobile.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 320px;
+    width: 100%;
+
+    @media (min-width: $screen-medium) {
+        background-image: url('../../../assets/images/nft-page-hero-tablet..png');
+        height: 420px;
+    }
+
+    @media (min-width: $screen-large) {
+        background-image: url('../../../assets/images/nft-page-hero-desktop..png');
+        height: 560px;
+    }
+}
+
+.section__nft-page {
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        padding-top: 80px;
+        width: 100%;
+
+        @media (min-width: $screen-medium) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+
+        &-helper {
+            display: flex;
+            flex-direction: column;
+            order: 1;
+
+            .hero-heading {
+
+                @media (min-width: $screen-medium) {
+                    font-size: 38px;
+                }
+
+                @media (min-width: $screen-large) {
+                    font-size: 51px;
+                }
+            }
+
+            .section-paragraph {
+                margin-bottom: 30px;
+                color: $color-gray;
+            }
+        }
+
+        .timer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 30px;
+            gap: 10px;
+            color: $color-white;
+            width: 315px;
+            margin-bottom: 20px;
+            font-family: $font-secondary;
+            background: rgba(59, 59, 59, 0.5);
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+            border-radius: 20px;
+            order: 2;
+
+            @media (min-width: $screen-medium) {
+                margin-bottom: 0;
+            }
+
+            &___warning {
+                font-family: $font-secondary;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 110%;
+            }
+
+            &-wrapper {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 30px;
+            }
+
+            .num-wrapper {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .num-wrapper .number {
+                font-weight: 700;
+                font-size: 38px;
+                line-height: 120%;
+            }
+
+            .num-wrapper {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 110%;
+            }
+        }
+
+        &-text {
+            order: 3;
+
+            @media (min-width: $screen-medium) {
+                width: 60%;
+                position: relative;
+                top: -100px;
+            }
+
+            @media (min-width: $screen-large) {
+                width: 60%;
+                position: relative;
+                top: -50px;
+            }
+        }
+
+        .card__profile {
+            margin-bottom: 20px;
+
+            @media (min-width: $screen-large) {
+                margin-bottom: 30px;
+
+                &-nick {
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .nft-page__title {
+            margin-bottom: 20px;
+            display: inline-block;
+
+            @media (min-width: $screen-large) {
+                font-size: 16px;
+            }
+
+            @media (min-width: $screen-large) {
+                font-size: 22px;
+            }
+        }
+
+        .hash-tags {
+            margin-bottom: 40px;
+
+            .break-helper {
+                @media (min-width: $screen-large) {
+                    display: none;
+                }
+            }
+
+            @media (min-width: $screen-large) {
+                flex-direction: row;
+            }
+
+            .hash-tag {
+                display: inline-block;
+                margin-bottom: 20px;
+                margin-right: 20px;
+                padding: 12px 30px;
+                gap: 12px;
+                background-color: $color-gray-dark;
+                color: $color-white;
+            }
+        }
+    }
+}
+
+.section__card-profiles {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (min-width: $screen-medium) {
+        padding-top: 0;
+    }
+
+    @media (min-width: $screen-large) {
+        padding-top: 40px;
+    }
+
+    .section-heading {
+        margin-bottom: 30px;
+        order: 1;
+
+        @media (min-width: $screen-medium) {
+            margin-bottom: 80px;
+        }
+
+        @media (min-width: $screen-large) {
+            margin-bottom: 74x;
+        }
+    }
+
+    .nft-page--button {
+        order: 2;
+        margin-bottom: 40px;
+        top: 0;
+
+        @media (min-width: $screen-medium) {
+            margin-bottom: 80px;
+        }
+    }
+
+    .row {
+        row-gap: 30px;
+        margin-bottom: 30px;
+        order: 2;
+
+        @media (min-width: 700px) {
+            order: 3;
+        }
+    }
+
+    .card__content {
+        background-color: $color-gray-dark;
+
+        .card__profile {
+            margin-bottom: 27px;
+        }
+    }
+
+    .med-res-profile {
+        display: none;
+
+        @media (min-width: $screen-medium) {
+            display: block;
+        }
+    }
+
+    .large-res-profile {
+        display: none;
+
+        @media (min-width: $screen-large) {
+            display: block;
+        }
+
+    }
+}

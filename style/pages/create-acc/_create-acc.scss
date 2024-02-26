@@ -1,0 +1,125 @@
+.section__create-account {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $screen-medium) {
+        flex-direction: row;
+    }
+
+    &__picture {
+        background-image: url('../../assets/images/create-acc-mobile.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 232px;
+
+        @media (min-width: $screen-medium) {
+            background-image: url('../../assets/images/create-acc-tablet.png');
+            flex-basis: calc(50% + 60px);
+            height: 617px;
+        }
+
+        @media (min-width: $screen-large) {
+            background-image: url('../../assets/images/create-acc-desktop.png');
+            height: 691px;
+        }
+    }
+
+    &__content {
+        flex-basis: calc(50% - 60px);
+        padding: 30px 30px 40px;
+
+        @media (min-width: $screen-medium) {
+            flex-basis: 50%;
+            padding-top: 80px;
+            padding-left: 40px;
+        }
+
+        @media (min-width: $screen-large) {
+            padding-top: 100px;
+            padding-left: 60px;
+        }
+    }
+
+    .hero-heading {
+        margin-bottom: 20px;
+        max-width: 510px;
+    }
+
+    &__paragraph {
+        margin-bottom: 30px;
+
+        @media (min-width: $screen-medium) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 7px; //??????????????????
+
+
+        @media (min-width: $screen-large) {
+            width: 330px;
+        }
+
+        input {
+            flex-basis: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 16px 0 16px 46px;
+            gap: 12px;
+            height: 46px;
+        }
+
+        .create-account__input-confirm {
+            margin-bottom: 15px;
+
+            @media (min-width: $screen-medium) {
+                margin-bottom: 27px;
+            }
+        }
+
+        .create-account__input-username,
+        .create-account__input-email,
+        .create-account__input-password,
+        .create-account__input-confirm {
+            background-repeat: no-repeat;
+            background-position: 5% center;
+        }
+
+        .create-account__input-username {
+            background-image: url('../../../assets/icons/User-2.svg');
+        }
+
+        .create-account__input-email {
+            background-image: url('../../../assets/icons/EnvelopeSimple-2.svg');
+        }
+
+        .create-account__input-password,
+        .create-account__input-confirm {
+            background-image: url('../../../assets/icons/LockKey.svg');
+        }
+
+    }
+
+    .wallet-provider {
+        border: 1px solid $color-purple;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 20px 0px 40px;
+        gap: 20px;
+        width: 320px;
+        height: 60px;
+
+        &__title {
+            color: $color-white;
+        }
+    }
+
+}

@@ -1,0 +1,197 @@
+.rankings__hero {
+    padding: 40px 0;
+
+    @media (min-width: $screen-medium) {
+        padding: 60px 0;
+    }
+
+    @media (min-width: $screen-large) {
+        padding: 80px 0;
+    }
+
+    .hero-heading {
+
+        @media (min-width: $screen-medium) {
+            font-size: 38px;
+        }
+
+        @media (min-width: $screen-large) {
+            font-size: 51px;
+        }
+    }
+}
+
+.artist-profile__tabs.rankings {
+
+    .tab-title {
+        gap: 0;
+    }
+
+    .tab-title__text-mobile {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        color: $color-white;
+
+        @media (min-width: $screen-medium) {
+            display: none;
+        }
+    }
+
+    .tab-title__text {
+        display: none;
+
+        @media (min-width: $screen-medium) {
+            display: block;
+        }
+    }
+}
+
+.section__top-creators.rankings {
+    .profile__info.first {
+        background-color: $color-background;
+        color: $color-gray;
+        font-family: $font-secondary;
+        border: 1px solid $color-gray-dark;
+    }
+
+    .profile__info {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 18px;
+
+        @media (min-width: $screen-large) {
+            padding: 12px 26px;
+
+        }
+
+        @media (min-width: $screen-large) {
+            padding: 12px 20px;
+            flex-direction: row;
+        }
+
+        .card-image {
+            width: 24px;
+            margin-right: 12px;
+
+            @media (min-width: $screen-large) {
+                width: 60px;
+                margin-right: 20px;
+            }
+
+
+        }
+
+        &-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &-number {
+            font-size: 12px;
+            color: $color-gray;
+            margin-right: 10px;
+
+            @media (min-width: $screen-medium) {
+                font-size: 16px;
+            }
+
+            @media (min-width: $screen-large) {
+                font-size: 16px;
+                width: 30px;
+                height: 30px;
+                background-color: $color-background;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+            }
+        }
+
+        &-span-wrapper {
+            display: flex;
+            flex-basis: 25%;
+
+            @media (min-width: 500px) {
+                flex-basis: 20%;
+            }
+
+            @media (min-width: $screen-medium) {
+                justify-content: space-between;
+                flex-basis: 30%;
+            }
+
+            @media (min-width: $screen-large) {
+                justify-content: space-between;
+                flex-basis: 50%;
+            }
+
+            :first-child {
+                display: none;
+
+                @media (min-width: $screen-medium) {
+                    display: flex;
+                    color: $color-green;
+                }
+            }
+
+            #title-change {
+                color: $color-gray;
+            }
+
+            :nth-child(2) {
+                display: none;
+
+                @media (min-width: $screen-large) {
+                    display: flex;
+                }
+            }
+        }
+
+        &-nick {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+
+            @media (min-width: $screen-medium) {
+                font-weight: 600;
+                font-size: 22px;
+            }
+        }
+
+        &-title {
+            display: flex;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 140%;
+
+            @media (min-width: $screen-medium) {
+                flex-basis: 50%;
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            @media (min-width: $screen-large) {
+                flex-basis: 50%;
+            }
+        }
+
+        &-key,
+        &-value {
+            display: flex;
+            font-size: 12px;
+
+            @media (min-width: $screen-medium) {
+                flex-basis: 50%;
+                font-size: 16px;
+            }
+
+            @media (min-width: $screen-large) {
+                flex-basis: 50%;
+            }
+        }
+    }
+}
